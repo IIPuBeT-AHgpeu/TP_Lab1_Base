@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TP_Lab1_Base.Service
+﻿namespace TP_Lab1_Base.Service
 {
-    internal class IParser
+    internal interface IParser<T>
     {
+        public T? TryParse(string data);
+        public T Parse(string data);
     }
 }
