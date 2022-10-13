@@ -1,6 +1,6 @@
 ﻿namespace TP_Lab1_Base.Service
 {
-    internal class TextFileFormat
+    internal class DataFormat
     {
         public TextFormat Format { get; set; }
 

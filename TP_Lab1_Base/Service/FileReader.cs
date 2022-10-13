@@ -1,27 +1,20 @@
-﻿namespace TP_Lab1_Base.Service
+﻿using System.Reflection;
+
+namespace TP_Lab1_Base.Service
 {
-    internal class DataReader
+    internal class FileReader
     {
         private string _path;
-        public TextFileFormat FileFormat { get; set; }
+        public string Path { get; set; }
         public string FileName { get; set; }
         public bool IsExist { get; set; } = false;
 
-        public DataReader(string fileName)
+        public FileReader(string fileName, string path)
         {
             FileName = fileName;
-            FileFormat = new TextFileFormat() { Format = TextFileFormat.TextFormat.TXT };
+            Path = path;
 
-            _path = fileName + FileFormat.GetLowerFormatName();
-            IsExist = File.Exists(_path);
-        }
-
-        public DataReader(string fileName, TextFileFormat fileFormat)
-        {
-            FileName = fileName;
-            FileFormat = fileFormat;
-
-            _path = fileName + FileFormat.GetLowerFormatName();
+            _path = path + "\\" + fileName;
             IsExist = File.Exists(_path);
         }
 
