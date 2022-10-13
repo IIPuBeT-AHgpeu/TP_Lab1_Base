@@ -2,7 +2,7 @@
 {
     internal interface IParser<T>
     {
-        public T? TryParse(string data);
-        public T Parse(string data);
+        public T TryParse(string data);
+        public T? Parse(string data);
     }
 }

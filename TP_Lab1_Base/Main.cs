@@ -5,11 +5,7 @@ FileReader dataReader = new FileReader("StandartTypeData.txt", @"C:\Users\Kirpa\
 
 Console.WriteLine(Directory.GetCurrentDirectory());
 
-if (dataReader.IsExist)
-{
-    Console.WriteLine(dataReader.ReadStringFromFile());
-}
-else
-{
-    Console.WriteLine("Чет все плохо по-ходу...");
-}
+MyParser parser = new MyParser();
+Console.WriteLine(dataReader.ReadStringFromFile());
+parser.TryParse(dataReader.ReadStringFromFile());
+
