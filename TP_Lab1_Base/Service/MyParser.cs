@@ -11,13 +11,13 @@ namespace TP_Lab1_Base.Service
         }
 
         public StandartModel[] TryParse(string data)
-        {
-            throw new NotImplementedException();
-            Regex regex = new Regex(CHUNK_REGEX);
+        {           
+            Regex regex = new Regex(CHUNK_REGEX, RegexOptions.Multiline);
             Console.WriteLine(regex.Matches(data).Count);
 
+            return null;
         }
 
-        private static readonly string CHUNK_REGEX = @"[а-яА-Я ]+\s(\s[а-яА-Я]+)";
+        private static readonly string CHUNK_REGEX = @"[а-яА-Я a-zA-Z-.]+\n((\t| )[a-zA-Zа-яА-Я-.]+:[0-9]{1,3}(\n|$))+";
     }
 }
