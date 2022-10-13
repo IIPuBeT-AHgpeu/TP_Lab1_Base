@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TP_Lab1_Base.Service
+{
+    internal class DataReader
+    {
+        
+        public string FileName { get; set; }
+    }
+}
