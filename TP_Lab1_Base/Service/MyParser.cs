@@ -3,9 +3,9 @@ using TP_Lab1_Base.Models;
 
 namespace TP_Lab1_Base.Service
 {
-    internal class MyParser : IParser<StandartModel[]>
+    internal class MyParser : IParser<Student[]>
     {
-        public StandartModel[]? Parse(string data)
+        public Student[]? Parse(string data)
         {
             data = data.Replace("\r", "");
 
@@ -13,11 +13,11 @@ namespace TP_Lab1_Base.Service
 
             if (chunks.Count == 0) return null;
 
-            List<StandartModel> students = new List<StandartModel>();
+            List<Student> students = new List<Student>();
 
             foreach (Match chunk in chunks)
             {
-                StandartModel student = new StandartModel();
+                Student student = new Student();
                 string[] parsedChunk = chunk.Value.Split('\n');
 
                 if (parsedChunk.Length < 2) return null;
@@ -44,7 +44,7 @@ namespace TP_Lab1_Base.Service
             return students.ToArray();
         }
 
-        public StandartModel[] TryParse(string data)
+        public Student[] TryParse(string data)
         {
             data = data.Replace("\r", "");
 
@@ -52,11 +52,11 @@ namespace TP_Lab1_Base.Service
 
             if (chunks.Count == 0) throw new Exception("Have no matches!");
 
-            List<StandartModel> students = new List<StandartModel>();
+            List<Student> students = new List<Student>();
 
             foreach (Match chunk in chunks)
             {
-                StandartModel student = new StandartModel();
+                Student student = new Student();
                 string[] parsedChunk = chunk.Value.Split('\n');
 
                 if (parsedChunk.Length < 2) throw new Exception("Invalid parsed data!");

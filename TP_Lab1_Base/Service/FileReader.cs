@@ -7,7 +7,7 @@ namespace TP_Lab1_Base.Service
         private string _path;
         public string Path { get; set; }
         public string FileName { get; set; }
-        public bool IsExist { get; set; } = false;
+        public bool FileIsExist { get; set; } = false;
 
         public FileReader(string fileName, string path)
         {
@@ -15,12 +15,12 @@ namespace TP_Lab1_Base.Service
             Path = path;
 
             _path = path + "\\" + fileName;
-            IsExist = File.Exists(_path);
+            FileIsExist = File.Exists(_path);
         }
 
         public byte[]? ReadBytesFromFile()
         {
-            if (IsExist == false) return null;
+            if (FileIsExist == false) return null;
             else
             {
                 try
@@ -36,7 +36,7 @@ namespace TP_Lab1_Base.Service
         }
         public async Task<byte[]> ReadBytesFromFileAsync()
         {
-            if (IsExist == false) return null;
+            if (FileIsExist == false) return null;
             else
             {
                 try
@@ -52,7 +52,7 @@ namespace TP_Lab1_Base.Service
         }
         public string ReadStringFromFile()
         {
-            if (IsExist == false) return null;
+            if (FileIsExist == false) return null;
             else
             {
                 try
@@ -68,7 +68,7 @@ namespace TP_Lab1_Base.Service
         }
         public async Task<string> ReadStringFromFileAsync()
         {
-            if (IsExist == false) return null;
+            if (FileIsExist == false) return null;
             else
             {
                 try

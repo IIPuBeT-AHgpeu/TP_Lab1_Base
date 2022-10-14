@@ -1,11 +1,29 @@
-﻿// See https://aka.ms/new-console-template for more information
-using TP_Lab1_Base.Models;
+﻿using TP_Lab1_Base.Models;
 using TP_Lab1_Base.Service;
 
-FileReader dataReader = new FileReader("StandartTypeData.txt", @"C:\Users\Kirpa\source\repos\TP_Lab1_Base\TP_Lab1_Base\Data");
+Console.WriteLine("Введите путь к файлу:");
+string path = Console.ReadLine();
+Console.WriteLine("Введите имя файла (включая расширение файла)");
+string fileName = Console.ReadLine();
+
+FileReader dataReader = new FileReader(fileName, path);
+
+while(!dataReader.FileIsExist)
+{
+    Console.WriteLine("Введите путь к файлу:");
+    path = Console.ReadLine();
+    Console.WriteLine("Введите имя файла (включая расширение файла)");
+    fileName = Console.ReadLine();
+
+    dataReader = new FileReader(fileName, path);
+}
 
 MyParser parser = new MyParser();
 
-StandartModel[] students = parser.TryParse(dataReader.ReadStringFromFile());
+Student[] students = parser.TryParse(dataReader.ReadStringFromFile());
 
-Console.WriteLine(students.Length);
+foreach (var student in students)
+{
+    Console.WriteLine(student.Name + ", средний балл:");
+    Console.WriteLine(Calculator.GetAverageRating(student));
+}
