@@ -3,6 +3,9 @@ using TP_Lab1_Base.Models;
 
 namespace TP_Lab1_Base.Service
 {
+    /// <summary>
+    /// Реализация интерфейса парсинга для формата данных, заданного преподавателем.
+    /// </summary>
     internal class MyParser : IParser<Student[]>
     {
         public Student[]? Parse(string data)
