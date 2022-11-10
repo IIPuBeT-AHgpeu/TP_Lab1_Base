@@ -11,7 +11,7 @@ namespace TP_Lab1_Base.Service
         /// <summary>
         /// Путь к файлу.
         /// </summary>
-        public string Path { get; set; }
+        public string Directory { get; set; }
         /// <summary>
         /// Имя файла.
         /// </summary>
@@ -24,10 +24,20 @@ namespace TP_Lab1_Base.Service
         public FileReader(string fileName, string path)
         {
             FileName = fileName;
-            Path = path;
+            Directory = path;
 
             _path = path + "\\" + fileName;
             FileIsExist = File.Exists(_path);
+        }
+
+        /// <summary>
+        /// Открывает файл внутри проекта с названием fileName.
+        /// </summary>
+        /// <param name="fileName">Имя открываемого файла.</param>
+        /// <returns></returns>
+        public static FileReader OpenFileFromProject(string fileName)
+        {
+            return new FileReader(fileName, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data"));
         }
 
         /// <summary>

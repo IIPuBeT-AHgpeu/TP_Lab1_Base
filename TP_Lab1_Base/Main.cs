@@ -27,3 +27,11 @@ foreach (var student in students)
     Console.WriteLine(student.Name + ", средний балл:");
     Console.WriteLine(Calculator.GetAverageRating(student));
 }
+
+dataReader = FileReader.OpenFileFromProject(fileName);
+
+foreach (var student in students)
+{
+    Console.WriteLine(student.Name + ", средний балл:");
+    Console.WriteLine(Calculator.GetAverageRating(student));
+}
