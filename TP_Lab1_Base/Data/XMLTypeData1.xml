@@ -1,0 +1,54 @@
+﻿<?xml version="1.0"?>
+<Table name="students">
+  <Student>
+    <Name>Иванов Иван Иванович</Name>
+    <EducationalSubjects>
+      <Subject>
+        <Name>математика</Name>
+        <Score>80</Score>
+      </Subject>
+      <Subject>
+        <Name>программирование</Name>
+        <Score>90</Score>
+      </Subject>
+      <Subject>
+        <Name>литература</Name>
+        <Score>76</Score>
+      </Subject>
+    </EducationalSubjects>
+  </Student>
+  <Student>
+    <Name>Петров Петр Петрович</Name>
+    <EducationalSubjects>
+      <Subject>
+        <Name>математика</Name>
+        <Score>100</Score>
+      </Subject>
+      <Subject>
+        <Name>социология</Name>
+        <Score>90</Score>
+      </Subject>
+      <Subject>
+        <Name>химия</Name>
+        <Score>61</Score>
+      </Subject>
+    </EducationalSubjects>
+  </Student>
+  <Student>
+    <Name>Соколов Михаил Сергеевич</Name>
+    <EducationalSubjects>
+      <Subject>
+        <Name>математика</Name>
+        <Score>80</Score>
+      </Subject>
+      <Subject>
+        <Name>программирование</Name>
+        <Score>90</Score>
+      </Subject>
+      <Subject>
+        <Name>литература</Name>
+        <Score>76</Score>
+      </Subject>
+    </EducationalSubjects>
+  </Student>
+</Table>
