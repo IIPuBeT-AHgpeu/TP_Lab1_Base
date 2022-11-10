@@ -3,7 +3,7 @@
     /// <summary>
     /// Класс-модель, описывающий предмет, изучаемый студентом.
     /// </summary>
-    internal class EducationalSubject
+    public class EducationalSubject
     {
         /// <summary>
         /// Наименование предмета.

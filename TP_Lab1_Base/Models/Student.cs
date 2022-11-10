@@ -3,7 +3,7 @@
     /// <summary>
     /// Класс-модели, описывающий сущность "Студент".
     /// </summary>
-    internal class Student
+    public class Student
     {
         /// <summary>
         /// Имя студента.
