@@ -15,7 +15,21 @@ namespace TP_Lab1_Base.Service
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Student[]));
             Student[]? group;
 
-            using (Stream s = GenerateStreamFromString(data))
+            string[] splited_by_endln = data.Replace("\r", "").Split('\n');
+
+            string validated_data = "";
+            bool isFirst = true;
+            foreach (var str in splited_by_endln)
+            {
+                if (isFirst)
+                {
+                    validated_data += str;
+                    isFirst = false;
+                }
+                else validated_data += "\n" + str;
+            }
+
+            using (Stream s = GenerateStreamFromString(validated_data))
             {
                 group = xmlSerializer.Deserialize(s) as Student[];
             }
