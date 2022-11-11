@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TP_Lab1_Base.Models;
+﻿using TP_Lab1_Base.Models;
 using TP_Lab1_Base.Service;
 
 namespace TP_Lab1_Base_Tests
