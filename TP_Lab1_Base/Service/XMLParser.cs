@@ -16,9 +16,11 @@ namespace TP_Lab1_Base.Service
             Student[]? group;
 
             string[] splited_by_endln = data.Replace("\r", "").Split('\n');
+            splited_by_endln[0] = "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
 
             string validated_data = "";
             bool isFirst = true;
+
             foreach (var str in splited_by_endln)
             {
                 if (isFirst)
