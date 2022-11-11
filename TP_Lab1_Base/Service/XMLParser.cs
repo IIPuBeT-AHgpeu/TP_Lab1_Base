@@ -25,7 +25,21 @@ namespace TP_Lab1_Base.Service
 
         public Student[] TryParse(string data)
         {
-            throw new NotImplementedException();
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Student[]));
+            Student[]? group;
+
+            using (Stream s = GenerateStreamFromString(data))
+            {
+                try
+                {
+                    group = xmlSerializer.Deserialize(s) as Student[];
+                }
+                catch(Exception e)
+                {
+                    throw new Exception("Ошибка при попытке десериализовать данные.\nСистемная информация: " + e.Message);
+                }
+            }
+            return group;
         }
 
         private Stream GenerateStreamFromString(string s)
