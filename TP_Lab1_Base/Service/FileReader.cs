@@ -5,7 +5,7 @@ namespace TP_Lab1_Base.Service
     /// <summary>
     /// Класс, который считывает данные из текстового файла.
     /// </summary>
-    internal class FileReader
+    public class FileReader
     {
         private string _path;
         /// <summary>
