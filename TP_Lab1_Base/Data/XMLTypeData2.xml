@@ -5,126 +5,126 @@
   <Student>
     <Name>Сидоров Иван Иванович</Name>
     <EducationalSubjects>
-      <Subject>
+      <EducationalSubject>
         <Name>математика</Name>
         <Score>80</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>программирование</Name>
         <Score>90</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>литература</Name>
         <Score>76</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>социология</Name>
         <Score>61</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>химия</Name>
         <Score>61</Score>
-      </Subject>
+      </EducationalSubject>
     </EducationalSubjects>
   </Student>
   <Student>
     <Name>Петров Петр Петрович</Name>
     <EducationalSubjects>
-      <Subject>
+      <EducationalSubject>
         <Name>математика</Name>
         <Score>100</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>программирование</Name>
         <Score>90</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>литература</Name>
         <Score>95</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>социология</Name>
         <Score>92</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>химия</Name>
         <Score>98</Score>
-      </Subject>
+      </EducationalSubject>
     </EducationalSubjects>
   </Student>
   <Student>
     <Name>Соколов Михаил Сергеевич</Name>
     <EducationalSubjects>
-      <Subject>
+      <EducationalSubject>
         <Name>математика</Name>
         <Score>80</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>программирование</Name>
         <Score>89</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>литература</Name>
         <Score>76</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>социология</Name>
         <Score>82</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>химия</Name>
         <Score>80</Score>
-      </Subject>
+      </EducationalSubject>
     </EducationalSubjects>
   </Student>
   <Student>
     <Name>Пак Вероника Андреевна</Name>
     <EducationalSubjects>
-      <Subject>
+      <EducationalSubject>
         <Name>математика</Name>
         <Score>80</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>программирование</Name>
         <Score>92</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>литература</Name>
         <Score>78</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>социология</Name>
         <Score>78</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>химия</Name>
         <Score>85</Score>
-      </Subject>
+      </EducationalSubject>
     </EducationalSubjects>
   </Student>
   <Student>
     <Name>Вак Михаил Сергеевич</Name>
     <EducationalSubjects>
-      <Subject>
+      <EducationalSubject>
         <Name>математика</Name>
         <Score>100</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>программирование</Name>
         <Score>100</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>литература</Name>
         <Score>76</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>социология</Name>
         <Score>100</Score>
-      </Subject>
-      <Subject>
+      </EducationalSubject>
+      <EducationalSubject>
         <Name>химия</Name>
         <Score>100</Score>
-      </Subject>
+      </EducationalSubject>
     </EducationalSubjects>
   </Student>
 </ArrayOfStudent>

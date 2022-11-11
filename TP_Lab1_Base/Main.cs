@@ -36,7 +36,7 @@ using TP_Lab1_Base.Service;
 //    Console.WriteLine(Calculator.GetAverageScore(student));
 //}
 
-string fileName = @"XMLTypeData1.xml";
+string fileName = @"XMLTypeData2.xml";
 FileReader reader = FileReader.OpenFileFromProject(fileName);
 
 string data = reader.ReadStringFromFile();
@@ -45,3 +45,5 @@ XMLParser parser = new XMLParser();
 
 //Act
 Student[] parsedData = parser.Parse(data);
+
+Console.ReadLine();
