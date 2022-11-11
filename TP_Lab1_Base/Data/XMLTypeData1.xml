@@ -1,54 +1,56 @@
-﻿<?xml version="1.0"?>
-<Table name="students">
-  <Student>
-    <Name>Иванов Иван Иванович</Name>
-    <EducationalSubjects>
-      <Subject>
-        <Name>математика</Name>
-        <Score>80</Score>
-      </Subject>
-      <Subject>
-        <Name>программирование</Name>
-        <Score>90</Score>
-      </Subject>
-      <Subject>
-        <Name>литература</Name>
-        <Score>76</Score>
-      </Subject>
-    </EducationalSubjects>
-  </Student>
-  <Student>
-    <Name>Петров Петр Петрович</Name>
-    <EducationalSubjects>
-      <Subject>
-        <Name>математика</Name>
-        <Score>100</Score>
-      </Subject>
-      <Subject>
-        <Name>социология</Name>
-        <Score>90</Score>
-      </Subject>
-      <Subject>
-        <Name>химия</Name>
-        <Score>61</Score>
-      </Subject>
-    </EducationalSubjects>
-  </Student>
-  <Student>
-    <Name>Соколов Михаил Сергеевич</Name>
-    <EducationalSubjects>
-      <Subject>
-        <Name>математика</Name>
-        <Score>80</Score>
-      </Subject>
-      <Subject>
-        <Name>программирование</Name>
-        <Score>90</Score>
-      </Subject>
-      <Subject>
-        <Name>литература</Name>
-        <Score>76</Score>
-      </Subject>
-    </EducationalSubjects>
-  </Student>
-</Table>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStudent
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Student>
+		<Name>Иванов Иван Иванович</Name>
+		<EducationalSubjects>
+			<EducationalSubject>
+				<Name>математика</Name>
+				<Score>80</Score>
+			</EducationalSubject>
+			<EducationalSubject>
+				<Name>программирование</Name>
+				<Score>90</Score>
+			</EducationalSubject>
+			<EducationalSubject>
+				<Name>литература</Name>
+				<Score>76</Score>
+			</EducationalSubject>
+		</EducationalSubjects>
+	</Student>
+	<Student>
+		<Name>Петров Петр Петрович</Name>
+		<EducationalSubjects>
+			<EducationalSubject>
+				<Name>математика</Name>
+				<Score>100</Score>
+			</EducationalSubject>
+			<EducationalSubject>
+				<Name>социология</Name>
+				<Score>90</Score>
+			</EducationalSubject>
+			<EducationalSubject>
+				<Name>химия</Name>
+				<Score>61</Score>
+			</EducationalSubject>
+		</EducationalSubjects>
+	</Student>
+	<Student>
+		<Name>Соколов Михаил Сергеевич</Name>
+		<EducationalSubjects>
+			<EducationalSubject>
+				<Name>математика</Name>
+				<Score>80</Score>
+			</EducationalSubject>
+			<EducationalSubject>
+				<Name>программирование</Name>
+				<Score>90</Score>
+			</EducationalSubject>
+			<EducationalSubject>
+				<Name>литература</Name>
+				<Score>76</Score>
+			</EducationalSubject>
+		</EducationalSubjects>
+	</Student>
+</ArrayOfStudent>

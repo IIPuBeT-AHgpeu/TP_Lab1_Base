@@ -1,5 +1,7 @@
-﻿<?xml version="1.0"?>
-<Table name="students">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStudent
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Student>
     <Name>Сидоров Иван Иванович</Name>
     <EducationalSubjects>
@@ -125,4 +127,4 @@
       </Subject>
     </EducationalSubjects>
   </Student>
-</Table>
+</ArrayOfStudent>
