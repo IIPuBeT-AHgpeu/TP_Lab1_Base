@@ -75,7 +75,7 @@ namespace TP_Lab1_Base.Service
 
                         if (subjNameSubjScoreString.Length < 2) throw new Exception("Invalid parsed \"subject:score\" string!");
 
-                        subjects.Add(new EducationalSubject() { Name = subjNameSubjScoreString[0].Remove(0), Score = Int32.Parse(subjNameSubjScoreString[1]) });
+                        subjects.Add(new EducationalSubject() { Name = subjNameSubjScoreString[0].Substring(1), Score = Int32.Parse(subjNameSubjScoreString[1]) });
                     }
                 }
 
