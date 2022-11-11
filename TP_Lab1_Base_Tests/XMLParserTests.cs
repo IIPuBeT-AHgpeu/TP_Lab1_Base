@@ -54,22 +54,38 @@ namespace TP_Lab1_Base_Tests
             bool isCorrect = true;
             string message = "";
 
-            if (parsedData.Length != 5) isCorrect = false;
+            if (parsedData.Length != 5)
+            {
+                isCorrect = false;
+                message = "Студентов не 5";
+            }
             else
             {
-                if (parsedData[0] == null) isCorrect = false;
+                if (parsedData[0] == null)
+                {
+                    isCorrect = false;
+                    message = "Первый студент null";
+                }
                 else
                 {
-                    if (parsedData[2].EducationalSubjects.Length != 5) isCorrect = false;
+                    if (parsedData[2].EducationalSubjects.Length != 5)
+                    {
+                        isCorrect = false;
+                        message = "Предметов не 5";
+                    }
                     else
                     {
-                        if (parsedData[parsedData.Length - 1].Name != "Вак Михаил Сергеевич") isCorrect = false;
+                        if (parsedData[parsedData.Length - 1].Name != "Вак Михаил Сергеевич")
+                        {
+                            isCorrect = false;
+                            message = "Последнее имя студента на Пак Михаил Сергеевич";
+                        }
                     }
                 }
             }
 
             //Assert
-            Assert.IsTrue(isCorrect);
+            Assert.IsTrue(isCorrect, message);
         }
     }
 }
