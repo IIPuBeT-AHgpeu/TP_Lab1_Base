@@ -41,9 +41,15 @@ FileReader reader = FileReader.OpenFileFromProject(fileName);
 
 string data = reader.ReadStringFromFile();
 Console.WriteLine(data);
-XMLParser parser = new XMLParser();
 
-//Act
-Student[] parsedData = parser.Parse(data);
+Console.WriteLine("--------------------------------------------------");
+fileName = @"XMLTypeData1.xml";
+reader = FileReader.OpenFileFromProject(fileName);
+data = reader.ReadStringFromFile();
+Console.WriteLine(data);
+//XMLParser parser = new XMLParser();
+
+////Act
+//Student[] parsedData = parser.Parse(data);
 
 Console.ReadLine();
