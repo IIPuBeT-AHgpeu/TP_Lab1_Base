@@ -5,10 +5,10 @@ name: Workflow for tests of modification
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
     branches:
-    - main
+    - master
 
 jobs:
   build:
